@@ -54,4 +54,9 @@ function log(message) {
     console.log(message);
 }
 log('Hello');
-// log(5);
+const user1 = {
+    id: 1,
+    name: 'John',
+};
+// console.log(user1.name);
+// user1.id = 4;

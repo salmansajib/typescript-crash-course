@@ -68,3 +68,17 @@ function log(message: string | number) {
 }
 log('Hello');
 // log(5);
+
+// ========== Interfaces ==========
+interface UserInterface {
+  readonly id: number;
+  name: string;
+  age?: number;
+}
+
+const user1: UserInterface = {
+  id: 1,
+  name: 'John',
+};
+// console.log(user1.name);
+// user1.id = 4;
