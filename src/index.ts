@@ -37,4 +37,15 @@ enum Direction2 {
   Left = 'Left',
   Right = 'Right',
 }
-console.log(Direction2.Left);
+// console.log(Direction2.Left);
+
+// Objects
+type User = {
+  id: number;
+  name: string;
+};
+
+const user: User = {
+  id: 1,
+  name: 'John',
+};
