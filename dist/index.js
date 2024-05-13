@@ -1,5 +1,5 @@
 "use strict";
-// Basic Types
+// ========== Basic Types ==========
 let id = 5;
 let company = 'Salman Media';
 let isPublished = true;
@@ -8,7 +8,7 @@ let age;
 age = 32;
 let ids = [1, 2, 3, 4, 5];
 let arr = [1, true, 'Hello'];
-// Tuple
+// ========== Tuple ==========
 let person = [1, 'Bard', true];
 // Tuple Array
 let employee;
@@ -17,10 +17,10 @@ employee = [
     [2, 'John'],
     [3, 'Jill'],
 ];
-// Union
+// ========== Union ==========
 let pid;
 pid = 22;
-// Enum
+// ========== Enum ==========
 var Direction1;
 (function (Direction1) {
     Direction1[Direction1["Up"] = 0] = "Up";
@@ -39,8 +39,19 @@ const user = {
     id: 1,
     name: 'John',
 };
-// Type Assertion
+// ========== Type Assertion ==========
 let cid = 1;
 // let customerId = <number>cid;
 let customerId = cid;
-console.log(typeof customerId);
+// console.log(typeof customerId);
+// ========== Functions ==========
+function addNum(x, y) {
+    return x + y;
+}
+// console.log(addNum(5, 5));
+// ========== Void ==========
+function log(message) {
+    console.log(message);
+}
+log('Hello');
+// log(5);
