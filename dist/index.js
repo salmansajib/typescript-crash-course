@@ -71,5 +71,13 @@ class Person {
 }
 const salman = new Person(1, 'Salman Sajib');
 const rohim = new Person(2, 'Rohim Uddin');
-console.log(salman.register());
-console.log(salman, rohim);
+// console.log(salman.register());
+// console.log(salman, rohim);
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, 'Karim', 'Developer');
+console.log(emp.position);

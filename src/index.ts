@@ -115,6 +115,18 @@ class Person implements personInterface {
 const salman = new Person(1, 'Salman Sajib');
 const rohim = new Person(2, 'Rohim Uddin');
 
-console.log(salman.register());
+// console.log(salman.register());
 
-console.log(salman, rohim);
+// console.log(salman, rohim);
+
+class Employee extends Person {
+  position: string;
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name);
+    this.position = position;
+  }
+}
+
+const emp = new Employee(3, 'Karim', 'Developer');
+console.log(emp.position);
