@@ -58,5 +58,6 @@ const user1 = {
     id: 1,
     name: 'John',
 };
-// console.log(user1.name);
-// user1.id = 4;
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+// console.log(add(3, 4));
