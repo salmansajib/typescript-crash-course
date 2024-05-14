@@ -90,3 +90,31 @@ interface MathFunc {
 const add: MathFunc = (x: number, y: number): number => x + y;
 const sub: MathFunc = (x: number, y: number): number => x - y;
 // console.log(add(3, 4));
+
+// ========== Classes ==========
+interface personInterface {
+  id: number;
+  name: string;
+  register(): string;
+}
+
+class Person implements personInterface {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+
+  register() {
+    return `${this.name} is now registered`;
+  }
+}
+
+const salman = new Person(1, 'Salman Sajib');
+const rohim = new Person(2, 'Rohim Uddin');
+
+console.log(salman.register());
+
+console.log(salman, rohim);

@@ -60,4 +60,16 @@ const user1 = {
 };
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
-// console.log(add(3, 4));
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is now registered`;
+    }
+}
+const salman = new Person(1, 'Salman Sajib');
+const rohim = new Person(2, 'Rohim Uddin');
+console.log(salman.register());
+console.log(salman, rohim);
